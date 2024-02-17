@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+* {
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    background-color: #000; /* Black background */
+    width: 100%;
+    position: center;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px; /* Adjust padding for header content */
+}
+
+header .container nav {
+    display: flex;
+    align-items: center;
+}
+
+header .container nav .logo {
+    display: flex;
+    color: #fff; /* White text */
+    text-decoration: none;
+    font-size: 20px; /* Adjust logo size */
+    font-weight: bold; /* Make logo bolder */
+}
+
+header .container nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    color: #fff;
+    display: inline;
+    margin-right: 10px;
+}
+
+header .container nav ul li a {
+    display: flex;
+    color: #fff; /* White text */
+    text-decoration: none;
+    font-size: 16px; /* Adjust font size */
+}
+
+header .container nav ul li a:hover {
+    display: flex;
+    background-color: #333; /* Hover effect */
+}
+
+/* Adjust other styles as needed to ensure consistency */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    height: 75%;
+    margin: 140px auto 0; /* Adjust top margin */
+    padding: 20px;
+    position: relative;
+}
+body {
+    font: arial;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'poppins';
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    height: 75%;
+    margin: 200px;
+    padding: 20px;
+    position: absolute;
+}
+
+
+/* -------------- glass effect section -------------- */
+
+.glass {
+    transform: scale(1.3);
+    display: flex;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+#main {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: #222222;
+}
+
+.bg {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+}
+
+.bg img {
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.text {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+    margin-top: 80px;
+}
+p span {
+    border: 1px solid rgba(66, 202, 245);
+        border-radius: 14px;
+        color: rgba(66, 202, 245);
+        line-height: 130%;
+        padding: 0 3px;
+        transition: all .2s ease;
+       
+        
+
+}
+.text strong {
+    font-size: .5rem;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    line-height: 50px;
+}
+
+.text P {
+    color: rgba(230, 230, 230, 0.92);
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin: 2px;
+    margin-right: 400px;
+    margin-top: 50px;
+}
+
+.btn {
+    margin-top: 20px;
+    width: 200px;
+    height: 45px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    margin-top: 10px;
+    box-shadow: 2px 2px 39px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background-color: #d83737;
+    transition: all ease 0.6s;
+}
+
+
+
+
+.text img {
+    display: flex;
+    margin: 18px;
+    margin-top: 50px;
+    padding: 3px;
+    height: 142px;
+    width: auto;
+    position: relative;
+    border-radius: 50%;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
+.social-media {
+    margin-top: 9px;
+    padding: 16px;
+    margin-top: 150px;
+
+}
+
+.social-media a {
+    margin: 9px;
+}
+
+.fa {
+    padding: 10px;
+    margin-top: 100px;
+    font-size: 25px;
+    width: 150px;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    margin: 50px 50px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    box-shadow: 2px 2px 39px rgba(0, 0, 0, 0.2);
+}
+
+.fa-facebook,
+.fa-twitter,
+.fa-instagram,
+.fa-github {
+    color: rgba(242, 242, 242, 0);
+    transition: all ease 0.3s;
+    margin-top: 100px;
+
+}
+.fa-facebook {  
+    background-image: url('yassir.png');
+    background-size: cover; /* or contain, or specify width and height */
+    background-repeat: no-repeat;
+    padding: 10px 10px; /* adjust padding as needed */
+    border: none;
+    cursor: pointer;}
+    
+.fa-facebook:hover {
+ 
+    background: #fd00fd;
+    transition: all ease-out 0.3s;
+   
+
+}
+
+.fa-twitter:hover {
+    background: #00ffff;
+    transition: all ease-out 0.3s;
+    
+
+}
+.fa-twitter {  
+    background-image: url('hi.png');
+    background-size: cover; /* or contain, or specify width and height */
+    background-repeat: no-repeat;
+    padding: 10px 10px; /* adjust padding as needed */
+    border: none;
+    cursor: pointer;}
+    
+.fa-facebook:hover { 
+ 
+    background: #f10ae5;
+    transition: all ease-out 0.3s;
+}
+.fa-instagram:hover {
+    background: radial-gradient(circle at 33% 100%, #ffee00 4%, #ffee00 30%, #ffee00 62%, #ffee00 85%, #ffee00);
+    transition: all ease-out 0.3s;
+
+}
+.fa-instagram {  
+    background-image: url('slm.png');
+    background-size: cover; /* or contain, or specify width and height */
+    background-repeat: no-repeat;
+    padding: 10px 10px; /* adjust padding as needed */
+    border: none;
+    cursor: pointer;}
+
+.fa-github:hover {
+    background: #161415;
+    transition: all ease-out 0.3s;
+}
+
+
+/*--------------------- responsive web-section ----------------- */
+
+@media (max-width:780px) {
+    .container {
+        width: 90%;
+        height: 70%;
+        margin-top: 100px;
+
+    }
+    .text strong {
+        font-size: 2rem;
+        line-height: 40px;
+        padding: 0px 10px;
+        margin-top: 100px;
+
+    }
+    .text p {
+        font-size: 1rem;
+    }
+    .btn {
+        width: 180px;
+        height: 44px;
+    }
+    .social-media {
+        margin-top: 18px;
+    }
+}
+
+@media (max-width: 520px) {
+    .container {
+        width: 90%;
+        height: 70%;
+    }
+    .text strong {
+        font-size: 1.6rem;
+        line-height: 30px;
+    }
+    .text p {
+        width: 90%;
+    }
+    .btn {
+        margin-top: 20px;
+        font-size: 0.9rem;
+        width: 150px;
+        height: 45px;
+    }
+    .social-media {
+        margin-top: 10px;
+    }
+    .fa {
+        font-size: 18px;
+        width: 50px;
+    }
+}
+
+@media(max-width:400px) {
+    .container {
+        width: 90%;
+        height: 60%;
+    }
+    .text strong {
+        font-size: 1.4rem;
+        line-height: 33px;
+    }
+}
+
+@media(max-width:360px) {
+    .container {
+        width: 90%;
+        height: 60%;
+        margin-top: 100px;
+
+    }
+    .text strong {
+        font-size: 1.1rem;
+        line-height: 30px;
+    }
+    .text p {
+        font-size: 0.8rem;
+    }
+    .btn {
+        font-size: 0.8rem;
+    }
+    .social-media a {
+        margin: 8px;
+        margin-top: 100px;
+
+    }
+}

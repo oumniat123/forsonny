@@ -1,0 +1,201 @@
+Sonny, [17/02/2024 01:10]
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #fff3f38d;
+            overflow-x: hidden;
+            height: 100%;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+        }
+        
+        body:not(.user-is-tabbing) button:focus,
+        body:not(.user-is-tabbing) input:focus,
+        body:not(.user-is-tabbing) select:focus,
+        body:not(.user-is-tabbing) textarea:focus {
+            outline: none;
+        }
+        
+        h1 {
+            color: rgb(220, 220, 220);
+            font-size: 35px;
+            font-weight: 800;
+        }
+        
+        #login-body {
+            background-image: url('background-img.jpg');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            margin: 0;
+        }
+    </style>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f492;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .search-container {
+        width: 80%;
+        margin: 50px auto;
+        text-align: center;
+    }
+    
+    .search-bar {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #c9c9c963;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
+    }
+    
+    .search-input {
+        width: 70%;
+        padding: 10px;
+        border: none;
+        outline: none;
+        color: rgba(0, 0, 0, 0.148);
+    }
+    
+    .search-button {
+        width: 20%;
+        padding: 5px;
+        background-color: #0c62bd6b;
+        color: #ffffff;
+        border: none;
+        cursor: pointer;
+        ;
+    }
+    
+    .search-field {
+        flex: 1;
+        padding: 10px;
+    }
+</style>
+</head>
+
+<body>
+
+    <div class="search-container">
+        <div class="search-bar">
+            <div class="search-field">
+                <label for="postedAt">Posted at:<br></label>
+                <input type="text" id="postedAt" class="search-input" placeholder="Enter date">
+            </div>
+            <div class="search-field">
+                <label for="industryType">Industry Type:</label>
+                <input type="text" id="industryType" class="search-input" placeholder="Enter industry">
+            </div>
+            <div class="search-field">
+                <label for="needs">Needs:<br></label>
+                <input type="text" id="needs" class="search-input" placeholder="Enter needs">
+            </div>
+            <button class="search-button" onclick="searchFunction()">Search</button>
+        </div>
+
+    </div>
+
+    <script>
+        function searchFunction() {
+            // Implement your search logic here
+            var postedAtValue = document.getElementById("postedAt").value;
+            var industryTypeValue = document.getElementById("industryType").value;
+            var needsValue = document.getElementById("needs").value;
+
+            // Use these values for searching or any other functionality
+            console.log("Posted at:", postedAtValue);
+            console.log("Industry Type:", industryTypeValue);
+            console.log("Needs:", needsValue);
+        }
+    </script>
+
+    <body id="login-body">
+        <div class="flex-container">
+            <div class="content-container">
+                <div class="form-container">
+                    <form action="/action_page.php">
+
+</form>
+                </div>
+
+            </div>
+            <div class="content-container">
+                <div class="form-container">
+                    <form action="/action_page.php">
+                        <!DOCTYPE html>
+                        <html>
+
+                        <head>
+                            <style>
+                                .container {
+                                    display: grid;
+                                    grid-template-columns: 1fr 1fr 1fr;
+                                    grid-gap: 10px;
+                                    background-color: none;
+                                    padding: 10px;
+                                }
+                                
+                                .block {
+                                    background-color: #ffffff7c;
+                                    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+                                    padding: 20px;
+                                    text-align: center;
+                                }
+                            </style>
+                        </head>
+
+                        <body>
+
+                            <div class="container" style="margin-top: 400px;">
+                                <div class="block">Block 1</div>
+                                <div class="block">Block 2</div>
+                                <div class="block">Block 3</div>
+                                <div class="block">Block 4</div>
+                                <div class="block">Block 5</div>
+                                <div class="block">Block 6</div>
+                                <div class="block">Block 7</div>
+                                <div class="block">Block 8</div>
+                                <div class="block">Block 9</div>
+                            </div>
+                        </body>
+
+                        </html> <br>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

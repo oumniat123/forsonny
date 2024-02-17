@@ -1,0 +1,170 @@
+Sonny, [16/02/2024 20:09]
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #fff3f38d;
+            overflow-x: hidden;
+            height: 100%;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+        }
+        
+        body:not(.user-is-tabbing) button:focus,
+        body:not(.user-is-tabbing) input:focus,
+        body:not(.user-is-tabbing) select:focus,
+        body:not(.user-is-tabbing) textarea:focus {
+            outline: none;
+        }
+        
+        h1 {
+            color: white;
+            font-size: 35px;
+            font-weight: 800;
+        }
+        
+        #login-body {
+            background-image: url('background-img.jpg');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .flex-container {
+            width: 100vw;
+            margin-top: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .content-container {
+            width: 500px;
+            height: 350px;
+        }
+        
+        .form-container {
+            display: flex;
+            align-items: center;
+            width: 400px;
+            height: 600px;
+            margin-top: 5px;
+            padding-top: 20px;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            background: #1f1f1f82;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.199);
+        }
+        
+        .subtitle {
+            font-size: 19px;
+            color: rgba(253, 253, 253, 0.74);
+        }
+        
+        input {
+            border: none;
+            border-bottom: solid rgb(143, 143, 143) 1px;
+            margin-bottom: 30px;
+            background: none;
+            color: rgba(255, 255, 255, 0.728);
+            height: 35px;
+            width: 300px;
+        }
+        
+        .submit-btn {
+            cursor: pointer;
+            border: none;
+            box-shadow: 2px 2px 7px #0033ff70;
+            background: #3d3475;
+            color: rgba(255, 255, 255, 0.8);
+            width: 80px;
+            transition: all 1s;
+        }
+        
+        .submit-btn:hover {
+            color: rgb(255, 255, 255);
+            box-shadow: none;
+        }
+    </style>
+</head>
+
+<body id="login-body">
+    <div class="flex-container">
+        <div class="content-container">
+            <div class="form-container">
+                <form action="/action_page.php">
+
+                    <br>
+                    <br>
+                    <span class="subtitle">BUDGET</span>
+                    <br>
+                    <input type="text" name="username" value="">
+                    <br>
+                    <span class="subtitle">INDUSTRY</span>
+                    <br>
+                    <input type="password" name="password" value="">
+                    <br><br>
+                    <span class="subtitle">INCOME RATE</span>
+                    <br>
+                    <input type="text" name="username" value="">
+                    <br>
+                    <input type="submit" value="SUBMIT" class="submit-btn">
+                </form>
+            </div>
+        </div>
+        <div class="content-container">
+            <div class="form-container">
+                <form action="/action_page.php">
+                    <h1>suggestions</h1>
+                    <br>
+
+
+                    <input type="text" name="field1" value="">
+                    <br>
+                    <span class="subtitle">STARTUP 01</span>
+                    <br>
+                    <input type="text" name="field2" value="">
+                    <br><br>
+                    <span class="subtitle">STARTUP 02</span>
+                    <br>
+                    <input type="text" name="field2" value="">
+                    <br><br>
+                    <span class="subtitle">STARTUP 03</span>
+                    <br>
+                    <input type="text" name="field2" value="">
+                    <br><br>
+                    <span class="subtitle">STARTUP 04</span>
+                    <br>
+                    <input type="text" name="field3" value="">
+                    <br>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
